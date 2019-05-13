@@ -1,0 +1,24 @@
+<header>
+    <mat-toolbar color="primary">WEBSOCKET</mat-toolbar>
+</header>
+<mat-grid-list cols="1" rowHeight="8:1">
+  <mat-grid-tile><section class="weight">
+    <p class="weight-p">{{this.value}} [g]</p>
+  </section></mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="5:1">
+  <mat-grid-tile>
+  <section class="taring" (click)="this.taring()">
+      <p class="taring-p">TARUJ</p>
+  </section>
+  <section class="zeroing" (click)="this.zeroing()">
+      <p class="zeroing-p">ZERUJ</p>
+  </section>
+</mat-grid-tile>
+</mat-grid-list>
+<mat-toolbar color="primary" class="footer">
+    <mat-toolbar-row>
+      <span class="footer-span">RADWAG</span>
+    </mat-toolbar-row>
+    </mat-toolbar>
+<router-outlet></router-outlet>
